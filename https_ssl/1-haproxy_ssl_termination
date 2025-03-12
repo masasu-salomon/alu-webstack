@@ -45,6 +45,7 @@ frontend lb-frontend-https
         reqadd X-Forwarded-Proto:\ https
         default_backend lb-backend
 
+
 backend lb-backend
         balance roundrobin
         server web-01 52.70.84.210:80 check
